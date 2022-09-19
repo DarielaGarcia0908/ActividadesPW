@@ -5,13 +5,13 @@ h1{
     margin:20px 10px;
 }
 form {
-    margin:10px;
+    margin:50px;
    
 }
 
-label{
-   padding-block:10px;
-   display:inline-block;
+label {
+    display: inline-block;
+    padding-top: 20px;
 }
 
 body {
@@ -21,3 +21,23 @@ body {
 img{
     height:50px;
 }
+
+.header-label {
+    display:inline-block;
+    font-size: 48px;
+    padding-left:80px;
+}
+
+.header-img {
+    width: 250px;
+    height: 250px;
+    
+}
+
+table{
+width: 100%;
+text-align: left;
+border-collapse: collapse;
+
+}
+

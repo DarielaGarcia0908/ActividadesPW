@@ -1,0 +1,32 @@
+﻿@model Unidad1_Actividad2.Models.CalificacionViewModel
+<html>
+<head>
+    <title>Calificar estudiante</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <h1>Calificaciones</h1>
+
+    <form method="post" action="~/Home/Index">
+        <h2>Agregar calificaciones:</h2>
+        <label>Calificación 1:</label>
+        <input type="number" name="c1" value="@Model.Calif1"></input>
+        <br />
+        <label>Calificación 2:</label>
+        <input type="number" name="c2" value="@Model.Calif2" /><br />
+        <label>Calificación 3:</label>
+        <input type="number" name="c3" value="@Model.Calif3" /><br />
+
+
+        <input name="button" type="submit" value="Promediar" /><br />
+        <label>Resultado:</label>
+        <input name="Promedio" type="number" readonly value="@Model.Promedio"  /><br />
+
+        <label >Estado:</label>
+        <input name="Estado" type="text" readonly value="@Model.Estado()" />
+    </form>
+
+
+</body>
+</html>
